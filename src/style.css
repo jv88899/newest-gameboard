@@ -1,0 +1,246 @@
+body,
+html {
+  box-sizing: border-box;
+  font-family: Lato;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.item-total {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 100%;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.green {
+  color: #00b050;
+}
+
+.blue {
+  color: #0070c0;
+}
+
+.red {
+  color:#ff0000;
+}
+
+.white {
+  color: white;
+}
+
+.bg-red {
+  background-color: #ff0000;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.game-board-wrapper {
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.transaction-list-wrapper {
+  padding: 3px;
+  width: 20%;
+}
+
+.transaction-list {
+  font-size: 12px;
+  height: 85%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.transaction-items-headers {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  text-align: center;
+}
+
+.transaction-items-header-number {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 15%;
+}
+
+.transaction-items-header-description {
+  border-right: 1px solid black;
+  width: 85%;
+}
+
+.transaction-active {
+  background-color: rgba(0, 215, 0, 1);
+}
+
+.board-wrapper {
+  display: flex;
+  width: 80%;
+}
+
+.customer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 90px;
+  text-align: center;
+  height: 80%;
+  width: 15%;
+}
+
+.customer-wrapper-customers ul {
+  margin-bottom: 5px;
+}
+
+.customer-wrapper-wells-fargo-bank h5,
+.customer-wrapper-us-bank h5 {
+  margin-bottom: 5px;
+}
+
+.income-balance-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.operating-wrapper {
+  padding-left: 10px;
+  width: 20%;
+}
+
+.rdi-brand-wrapper {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+}
+
+.income-balance-inner-wrapper {
+  border: 3px solid black;
+  display: flex;
+}
+
+.assets-liability-wrapper {
+  display: flex;
+}
+
+.assets-liability-wrapper h5 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.assets-wrapper {
+  border-right: 1px dashed black;
+}
+
+.assets-wrapper ul li span {
+  margin-top: 10px;
+}
+
+.assets-wrapper ul li:first-child span {
+  margin: 0;
+}
+
+.income-statement,
+.balance-sheet {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  margin: 3px;
+}
+
+.income-statement {
+  width: 40%;
+}
+
+.income-statement h3 {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.totals-wrapper {
+  border-top: 1px dashed black;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.balance-sheet {
+  width: 60%;
+}
+
+.balance-sheet h3 {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.income-statement ul li,
+.balance-sheet ul li,
+.operating-wrapper-inner ul li,
+.investing-inner ul li,
+.financing-inner ul li {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+
+.income-statement ul li a,
+.balance-sheet ul li a,
+.operating-wrapper-inner ul li a {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.income-statement ul li .item-name,
+.balance-sheet ul li .item-name {
+  width: 60%;
+}
+
+.net-assets h5 {
+  border-bottom: 1px dashed black;
+  margin-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+.net-assets-inner-wrapper {
+  align-items: center;
+  display: flex;
+  margin-top: -20px;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+}
+
+.operating-wrapper {
+  padding-top: 65px;
+}
+
+.test-active {
+  background-color: yellow;
+}
