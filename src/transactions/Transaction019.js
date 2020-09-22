@@ -160,7 +160,7 @@ const Transaction019 = () => (
                     </li>
                     <li>
                       <span className="item-name blue">Salary Payable</span>
-                      <span className="item-total test-active">2</span>
+                      <span className="item-total test-active">0</span>
                     </li>
                     <li>
                       <span className="item-name blue">Broker Payable</span>

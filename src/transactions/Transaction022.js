@@ -151,7 +151,7 @@ const Transaction022 = () => (
                     </li>
                     <li>
                       <span className="item-name blue">Salary Payable</span>
-                      <span className="item-total">2</span>
+                      <span className="item-total">0</span>
                     </li>
                     <li>
                       <Link
