@@ -155,7 +155,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       <div className="transaction-list">
         <div className="transaction-items-headers">
           <span className="transaction-items-header-description bold center">
-            <h3>Transactions</h3>
+            <h3>Year 1 Transactions</h3>
           </span>
         </div>
         {transactions.map(transaction => (
@@ -167,6 +167,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
             isActive={isActive}
             isPrevious={isPrevious}
             activeStep={activeStep}
+            stepNumber={transaction.stepNumber}
           />
         ))}
       </div>
