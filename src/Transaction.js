@@ -30,7 +30,7 @@ const Transaction = ({
             ? "transaction-items-headers transaction-active"
             : "transaction-items-headers"
         }
-        style={highlightCashTransactions && isCashTransaction ? {backgroundColor: `green`} : null}
+        style={highlightCashTransactions && isCashTransaction ? {backgroundColor: `#9be6b3`} : null}
       >
         <span className="transaction-items-header-number">{stepNumber}</span>
         <span className="transaction-items-header-description">
