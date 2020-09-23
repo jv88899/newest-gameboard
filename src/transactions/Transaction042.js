@@ -104,16 +104,7 @@ const Transaction042 = () => (
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <Link
-                to="/042"
-                style={{
-                  color: `inherit`,
-                  textDecoration: `none`,
-                  cursor: `default`
-                }}
-              >
-                <span className="item-total revenue bg-black white">0</span>
-              </Link>
+              <span className="item-total revenue bg-black white">4</span>
             </div>
           </div>
 
