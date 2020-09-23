@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Transaction from './Transaction'
+import Transaction from "./Transaction";
 
-const TransactionList = ({ activeStep, isActive, isPrevious}) => {
+const TransactionList = ({ activeStep, isActive, isPrevious }) => {
   const [transactions, setTransactions] = useState([
     {
       stepNumber: `1`,
@@ -11,7 +11,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Sale of $20 to customers for Year 1`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: false
     },
     {
       stepNumber: `2`,
@@ -20,7 +21,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Collect $18 cash from customers`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `3`,
@@ -29,7 +31,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Actual prescriptions filled for $2; claim received`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: false
     },
     {
       stepNumber: `4`,
@@ -38,7 +41,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `$11 of actual medical expenses for visits; claim received`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: false
     },
     {
       stepNumber: `5`,
@@ -47,7 +51,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Estimated claims for $2 not received for Year 1`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: false
     },
     {
       stepNumber: `6`,
@@ -56,7 +61,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `$12 payment for pharmacy claims and known medical claims`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `7`,
@@ -65,7 +71,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `$1 payroll for Medica's employees`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: false
     },
     {
       stepNumber: `8`,
@@ -74,7 +81,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Paid $1 to Medica's employees`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `9`,
@@ -83,7 +91,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Owe $1 to brokers for selling Commercial, IFB, and Medicare policies`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: false,
     },
     {
       stepNumber: `10`,
@@ -92,7 +101,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Receive bill of $1 from KSTP for ad space for "We've got you covered" commercials`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: false,
     },
     {
       stepNumber: `11`,
@@ -101,7 +111,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `$10 cash received from customer for Year 2`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true,
     },
     {
       stepNumber: `12`,
@@ -110,7 +121,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Purchase of 401 and 301 Carlson Parkway buildings for $5`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true,
     },
     {
       stepNumber: `13`,
@@ -119,7 +131,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Pay $1 of premium taxes to the Minnesota Department of Revenue`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true,
     },
     {
       stepNumber: `14`,
@@ -128,7 +141,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Buy investments (primarily bonds but some stocks) with excess cash of $6`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true,
     },
     {
       stepNumber: `15`,
@@ -137,7 +151,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Receive a very generous dividend of $4`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true,
     },
     {
       stepNumber: `16`,
@@ -146,10 +161,13 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
       description: `Pay federal income taxes of $1 to the IRS`,
       activeStep: null,
       previousStep: null,
-      visible: true
+      visible: true,
+      isCashTransaction: true,
     }
   ]);
-  console.log('props', activeStep)
+  const [highlightCashTransactions, setHighlightCashTransactions] = useState(
+    true
+  );
   return (
     <div className="transaction-list-wrapper">
       <div className="transaction-list">
@@ -168,6 +186,8 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
             isPrevious={isPrevious}
             activeStep={activeStep}
             stepNumber={transaction.stepNumber}
+            highlightCashTransactions={highlightCashTransactions}
+            isCashTransaction={transaction.isCashTransaction}
           />
         ))}
       </div>

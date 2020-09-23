@@ -8,9 +8,12 @@ const Transaction = ({
   transactionNumber,
   route,
   stepNumber,
-  description
+  description,
+  highlightCashTransactions,
+  isCashTransaction
 }) => {
   console.log("active step is", activeStep);
+  console.log('highlight cash transactions', highlightCashTransactions)
   return (
     <Link
       to={`/${route}`}
@@ -27,6 +30,7 @@ const Transaction = ({
             ? "transaction-items-headers transaction-active"
             : "transaction-items-headers"
         }
+        style={highlightCashTransactions && isCashTransaction ? {backgroundColor: `green`} : null}
       >
         <span className="transaction-items-header-number">{stepNumber}</span>
         <span className="transaction-items-header-description">
