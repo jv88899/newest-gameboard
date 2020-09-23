@@ -128,7 +128,7 @@ h5 {
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-top: 90px;
   text-align: center;
   height: 80%;
@@ -137,6 +137,11 @@ h5 {
 
 .customer-wrapper-customers ul {
   margin-bottom: 5px;
+}
+
+.customer-wrapper-wells-fargo-bank,
+.customer-wrapper-us-bank {
+  margin-top: 125px;
 }
 
 .customer-wrapper-wells-fargo-bank h5,
