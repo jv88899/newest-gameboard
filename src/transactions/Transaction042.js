@@ -185,7 +185,16 @@ const Transaction042 = () => (
               <h5>Net Assets</h5>
               <div className="net-assets-inner-wrapper">
                 <span className="item-total">0</span>
-                <span className="item-total">0</span>
+                <Link
+                  to="/043"
+                  style={{
+                    color: `inherit`,
+                    textDecoration: `none`,
+                    cursor: `default`
+                  }}
+                >
+                  <span className="item-total">0</span>
+                </Link>
               </div>
             </div>
           </div>
