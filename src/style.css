@@ -271,3 +271,9 @@ h5 {
 .test-active {
   background-color: yellow;
 }
+
+.operating-inner-list li span.red,
+.investing-inner-list li span.red,
+.financing-inner-list li span.red {
+  color: black;
+}
