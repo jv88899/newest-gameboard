@@ -5,11 +5,12 @@ const Transaction = ({
   isActive,
   isPrevious,
   activeStep,
+  transactionNumber,
   route,
   stepNumber,
   description
 }) => {
-  console.log('active step is', activeStep)
+  console.log("active step is", activeStep);
   return (
     <Link
       to={`/${route}`}
@@ -22,7 +23,7 @@ const Transaction = ({
     >
       <div
         className={
-          activeStep === route
+          activeStep === transactionNumber
             ? "transaction-items-headers transaction-active"
             : "transaction-items-headers"
         }

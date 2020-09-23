@@ -16,7 +16,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `2`,
       transactionNumber: `002`,
-      route: `002`,
+      route: `003`,
       description: `Collect $18 cash from customers`,
       activeStep: null,
       previousStep: null,
@@ -25,7 +25,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `3`,
       transactionNumber: `003`,
-      route: `003`,
+      route: `006`,
       description: `Actual prescriptions filled for $2; claim received`,
       activeStep: null,
       previousStep: null,
@@ -34,7 +34,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `4`,
       transactionNumber: `004`,
-      route: `004`,
+      route: `008`,
       description: `$11 of actual medical expenses for visits; claim received`,
       activeStep: null,
       previousStep: null,
@@ -43,7 +43,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `5`,
       transactionNumber: `005`,
-      route: `005`,
+      route: `010`,
       description: `Estimated claims for $2 not received for Year 1`,
       activeStep: null,
       previousStep: null,
@@ -52,7 +52,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `6`,
       transactionNumber: `006`,
-      route: `006`,
+      route: `012`,
       description: `$12 payment for pharmacy claims and known medical claims`,
       activeStep: null,
       previousStep: null,
@@ -61,7 +61,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `7`,
       transactionNumber: `007`,
-      route: `007`,
+      route: `016`,
       description: `$1 payroll for Medica's employees`,
       activeStep: null,
       previousStep: null,
@@ -70,7 +70,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `8`,
       transactionNumber: `008`,
-      route: `008`,
+      route: `018`,
       description: `Paid $1 to Medica's employees`,
       activeStep: null,
       previousStep: null,
@@ -79,7 +79,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `9`,
       transactionNumber: `009`,
-      route: `009`,
+      route: `021`,
       description: `Owe $1 to brokers for selling Commercial, IFB, and Medicare policies`,
       activeStep: null,
       previousStep: null,
@@ -88,7 +88,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `10`,
       transactionNumber: `010`,
-      route: `010`,
+      route: `023`,
       description: `Receive bill of $1 from KSTP for ad space for "We've got you covered" commercials`,
       activeStep: null,
       previousStep: null,
@@ -97,7 +97,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `11`,
       transactionNumber: `011`,
-      route: `011`,
+      route: `025`,
       description: `$10 cash received from customer for Year 2`,
       activeStep: null,
       previousStep: null,
@@ -106,7 +106,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `12`,
       transactionNumber: `012`,
-      route: `012`,
+      route: `028`,
       description: `Purchase of 401 and 301 Carlson Parkway buildings for $5`,
       activeStep: null,
       previousStep: null,
@@ -115,7 +115,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `13`,
       transactionNumber: `013`,
-      route: `013`,
+      route: `031`,
       description: `Pay $1 of premium taxes to the Minnesota Department of Revenue`,
       activeStep: null,
       previousStep: null,
@@ -124,7 +124,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `14`,
       transactionNumber: `014`,
-      route: `014`,
+      route: `034`,
       description: `Buy investments (primarily bonds but some stocks) with excess cash of $6`,
       activeStep: null,
       previousStep: null,
@@ -133,7 +133,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `15`,
       transactionNumber: `015`,
-      route: `015`,
+      route: `036`,
       description: `Receive a very generous dividend of $4`,
       activeStep: null,
       previousStep: null,
@@ -142,7 +142,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
     {
       stepNumber: `16`,
       transactionNumber: `016`,
-      route: `016`,
+      route: `038`,
       description: `Pay federal income taxes of $1 to the IRS`,
       activeStep: null,
       previousStep: null,
@@ -152,19 +152,17 @@ const TransactionList = ({ activeStep, isActive, isPrevious}) => {
   console.log('props', activeStep)
   return (
     <div className="transaction-list-wrapper">
-      <h2>Transaction List</h2>
       <div className="transaction-list">
         <div className="transaction-items-headers">
-          <span className="transaction-items-header-number">#</span>
-          <span className="transaction-items-header-description">
-            Description
+          <span className="transaction-items-header-description bold center">
+            <h3>Transactions</h3>
           </span>
         </div>
         {transactions.map(transaction => (
           <Transaction
             description={transaction.description}
             key={transaction.transactionNumber}
-            stepNumber={transaction.stepNumber}
+            transactionNumber={transaction.transactionNumber}
             route={transaction.route}
             isActive={isActive}
             isPrevious={isPrevious}

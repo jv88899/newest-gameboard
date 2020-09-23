@@ -20,7 +20,7 @@ const Transaction004 = () => (
           <span className="item-total test-active">22</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
-          <h5 className="green">Wells Fargo Bank</h5>
+          <h5 className="green">Wells Fargo <br /> Bank</h5>
           <span className="item-total">5</span>
         </div>
         <div className="customer-wrapper-us-bank">
