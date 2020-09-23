@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction041 = () => (
+const Transaction042 = () => (
   <>
     <TransactionList activeStep={null} />
     <div className="board-wrapper">
@@ -255,4 +255,4 @@ const Transaction041 = () => (
   </>
 );
 
-export default Transaction041;
+export default Transaction042;
