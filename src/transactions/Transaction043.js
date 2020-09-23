@@ -4,7 +4,7 @@ import TransactionList from "../TransactionList";
 
 const Transaction043 = () => (
   <>
-    <TransactionList activeStep={null} />
+    <TransactionList activeStep={null} canHighlightCashTransactions={true} />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -185,7 +185,7 @@ const Transaction043 = () => (
               <h5>Net Assets</h5>
               <div className="net-assets-inner-wrapper">
                 <span className="item-total">0</span>
-                <span className="item-total">0</span>
+                <span className="item-total">4</span>
               </div>
             </div>
           </div>

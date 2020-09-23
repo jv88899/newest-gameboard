@@ -12,8 +12,8 @@ const Transaction = ({
   highlightCashTransactions,
   isCashTransaction
 }) => {
-  console.log("active step is", activeStep);
-  console.log('highlight cash transactions', highlightCashTransactions)
+  // console.log("active step is", activeStep);
+  // console.log('highlight cash transactions', highlightCashTransactions)
   return (
     <Link
       to={`/${route}`}

@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Transaction from "./Transaction";
 
-const TransactionList = ({ activeStep, isActive, isPrevious }) => {
+const TransactionList = ({
+  activeStep,
+  isActive,
+  isPrevious,
+  canHighlightCashTransactions
+}) => {
   const [transactions, setTransactions] = useState([
     {
       stepNumber: `1`,
@@ -92,7 +97,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: false,
+      isCashTransaction: false
     },
     {
       stepNumber: `10`,
@@ -102,7 +107,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: false,
+      isCashTransaction: false
     },
     {
       stepNumber: `11`,
@@ -112,7 +117,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `12`,
@@ -122,7 +127,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `13`,
@@ -132,7 +137,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `14`,
@@ -142,7 +147,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `15`,
@@ -152,7 +157,7 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: true,
+      isCashTransaction: true
     },
     {
       stepNumber: `16`,
@@ -162,18 +167,26 @@ const TransactionList = ({ activeStep, isActive, isPrevious }) => {
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: true,
+      isCashTransaction: true
     }
   ]);
   const [highlightCashTransactions, setHighlightCashTransactions] = useState(
-    true
+    false
   );
+
+  console.log(canHighlightCashTransactions);
   return (
     <div className="transaction-list-wrapper">
       <div className="transaction-list">
         <div className="transaction-items-headers">
           <span className="transaction-items-header-description bold center">
-            <h3>Year 1 Transactions</h3>
+            <h3
+              onClick={() => {
+                if (canHighlightCashTransactions) setHighlightCashTransactions(!highlightCashTransactions);
+              }}
+            >
+              Year 1 Transactions
+            </h3>
           </span>
         </div>
         {transactions.map(transaction => (
