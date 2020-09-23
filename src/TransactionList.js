@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Transaction from "./Transaction";
 
 const TransactionList = ({
@@ -173,8 +172,6 @@ const TransactionList = ({
   const [highlightCashTransactions, setHighlightCashTransactions] = useState(
     false
   );
-
-  console.log(canHighlightCashTransactions);
   return (
     <div className="transaction-list-wrapper">
       <div className="transaction-list">
@@ -195,8 +192,6 @@ const TransactionList = ({
             key={transaction.transactionNumber}
             transactionNumber={transaction.transactionNumber}
             route={transaction.route}
-            isActive={isActive}
-            isPrevious={isPrevious}
             activeStep={activeStep}
             stepNumber={transaction.stepNumber}
             highlightCashTransactions={highlightCashTransactions}

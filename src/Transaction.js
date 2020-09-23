@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Transaction = ({
-  isActive,
-  isPrevious,
   activeStep,
   transactionNumber,
   route,
@@ -12,8 +10,6 @@ const Transaction = ({
   highlightCashTransactions,
   isCashTransaction
 }) => {
-  // console.log("active step is", activeStep);
-  // console.log('highlight cash transactions', highlightCashTransactions)
   return (
     <Link
       to={`/${route}`}
