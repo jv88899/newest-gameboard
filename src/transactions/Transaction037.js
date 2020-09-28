@@ -27,7 +27,7 @@ const Transaction037 = () => (
         </div>
         <div className="customer-wrapper-us-bank">
           <h5 className="green">US Bank</h5>
-          <span className="item-total">0</span>
+          <span className="item-total test-active">0</span>
         </div>
       </div>
       {/* income statement and balance sheet section */}
@@ -118,14 +118,21 @@ const Transaction037 = () => (
                   <h5>Assets</h5>
                   <ul className="balance-sheet-assets">
                     <li>
-                      <Link to="/038">
+                      <Link
+                        to="/038"
+                        style={{
+                          color: `inherit`,
+                          textDecoration: `none`,
+                          cursor: `default`
+                        }}
+                      >
                         <span className="item-name green">Cash</span>
-                        <span className="item-total">9</span>
+                        <span className="item-total">3</span>
                       </Link>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
-                      <span className="item-total test-active">6</span>
+                      <span className="item-total">6</span>
                     </li>
                     <li>
                       <span className="item-name blue">
