@@ -4,7 +4,7 @@ import TransactionList from "../TransactionList";
 
 const Transaction041 = () => (
   <>
-    <TransactionList activeStep={null} />
+    <TransactionList activeStep="016" />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -20,9 +20,7 @@ const Transaction041 = () => (
           <span className="item-total">12</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
-          <h5 className="green">
-            Wells Fargo <br /> Bank
-          </h5>
+          <h5 className="green">Wells Fargo <br /> Bank</h5>
           <span className="item-total">5</span>
         </div>
         <div className="customer-wrapper-us-bank">
@@ -104,16 +102,7 @@ const Transaction041 = () => (
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <Link
-                to="/042"
-                style={{
-                  color: `inherit`,
-                  textDecoration: `none`,
-                  cursor: `default`
-                }}
-              >
-                <span className="item-total revenue bg-black white">0</span>
-              </Link>
+              <span className="item-total revenue bg-black white">0</span>
             </div>
           </div>
 
@@ -128,7 +117,7 @@ const Transaction041 = () => (
                   <ul className="balance-sheet-assets">
                     <li>
                       <span className="item-name green">Cash</span>
-                      <span className="item-total">6</span>
+                      <span className="item-total test-active">6</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
@@ -227,8 +216,17 @@ const Transaction041 = () => (
               <span className="item-total">0</span>
             </li>
             <li>
-              <span className="item-name red">Taxing Authority</span>
-              <span className="item-total">2</span>
+              <Link
+                to="/042"
+                style={{
+                  color: `inherit`,
+                  textDecoration: `none`,
+                  cursor: `default`
+                }}
+              >
+                <span className="item-name red">Taxing Authority</span>
+                <span className="item-total">1</span>
+              </Link>
             </li>
           </ul>
         </div>

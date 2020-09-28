@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction038 = () => (
+const Transaction044 = () => (
   <>
-    <TransactionList activeStep="015" />
+    <TransactionList activeStep={null} canHighlightCashTransactions={true} />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -20,7 +20,9 @@ const Transaction038 = () => (
           <span className="item-total">12</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
-          <h5 className="green">Wells Fargo <br /> Bank</h5>
+          <h5 className="green">
+            Wells Fargo <br /> Bank
+          </h5>
           <span className="item-total">5</span>
         </div>
         <div className="customer-wrapper-us-bank">
@@ -90,28 +92,19 @@ const Transaction038 = () => (
                 <span className="item-total">0</span>
               </li>
               <li>
-                <Link
-                  to="/039"
-                  style={{
-                    color: `inherit`,
-                    textDecoration: `none`,
-                    cursor: `default`
-                  }}
-                >
-                  <span className="item-name">Investment Income</span>
-                  <span className="item-total">0</span>
-                </Link>
+                <span className="item-name">Investment Income</span>
+                <span className="item-total">4</span>
               </li>
               <li>
                 <span className="item-name red">
                   Federal Income Tax Expense
                 </span>
-                <span className="item-total">0</span>
+                <span className="item-total">1</span>
               </li>
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <span className="item-total revenue bg-black white">0</span>
+              <span className="item-total revenue bg-black white">4</span>
             </div>
           </div>
 
@@ -126,7 +119,7 @@ const Transaction038 = () => (
                   <ul className="balance-sheet-assets">
                     <li>
                       <span className="item-name green">Cash</span>
-                      <span className="item-total test-active">7</span>
+                      <span className="item-total">6</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
@@ -192,7 +185,7 @@ const Transaction038 = () => (
               <h5>Net Assets</h5>
               <div className="net-assets-inner-wrapper">
                 <span className="item-total">0</span>
-                <span className="item-total">0</span>
+                <span className="item-total">4</span>
               </div>
             </div>
           </div>
@@ -226,7 +219,7 @@ const Transaction038 = () => (
             </li>
             <li>
               <span className="item-name red">Taxing Authority</span>
-              <span className="item-total">1</span>
+              <span className="item-total">2</span>
             </li>
           </ul>
         </div>
@@ -253,4 +246,4 @@ const Transaction038 = () => (
   </>
 );
 
-export default Transaction038;
+export default Transaction044;

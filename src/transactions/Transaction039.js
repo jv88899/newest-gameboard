@@ -91,13 +91,22 @@ const Transaction039 = () => (
               </li>
               <li>
                 <span className="item-name">Investment Income</span>
-                <span className="item-total">4</span>
+                <span className="item-total test-active">4</span>
               </li>
               <li>
-                <span className="item-name red">
-                  Federal Income Tax Expense
-                </span>
-                <span className="item-total test-active">1</span>
+                <Link
+                  to="/040"
+                  style={{
+                    color: `inherit`,
+                    textDecoration: `none`,
+                    cursor: `default`
+                  }}
+                >
+                  <span className="item-name red">
+                    Federal Income Tax Expense
+                  </span>
+                  <span className="item-total">0</span>
+                </Link>
               </li>
             </ul>
             <div className="totals-wrapper">
@@ -116,17 +125,8 @@ const Transaction039 = () => (
                   <h5>Assets</h5>
                   <ul className="balance-sheet-assets">
                     <li>
-                      <Link
-                        to="/040"
-                        style={{
-                          color: `inherit`,
-                          textDecoration: `none`,
-                          cursor: `default`
-                        }}
-                      >
-                        <span className="item-name green">Cash</span>
-                        <span className="item-total">7</span>
-                      </Link>
+                      <span className="item-name green">Cash</span>
+                      <span className="item-total">7</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>

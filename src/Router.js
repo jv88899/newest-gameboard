@@ -43,6 +43,7 @@ import Transaction040 from "./transactions/Transaction040";
 import Transaction041 from "./transactions/Transaction041";
 import Transaction042 from "./transactions/Transaction042";
 import Transaction043 from "./transactions/Transaction043";
+import Transaction044 from "./transactions/Transaction044";
 
 const Router = () => {
   return (
@@ -179,6 +180,9 @@ const Router = () => {
         </Route>
         <Route path="/043" exact>
           <Transaction043 />
+        </Route>
+        <Route path="/044" exact>
+          <Transaction044 />
         </Route>
       </Switch>
     </BrowserRouter>

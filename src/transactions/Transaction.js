@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction038 = () => (
+const Transaction037 = () => (
   <>
     <TransactionList activeStep="015" />
     <div className="board-wrapper">
@@ -90,17 +90,8 @@ const Transaction038 = () => (
                 <span className="item-total">0</span>
               </li>
               <li>
-                <Link
-                  to="/039"
-                  style={{
-                    color: `inherit`,
-                    textDecoration: `none`,
-                    cursor: `default`
-                  }}
-                >
-                  <span className="item-name">Investment Income</span>
-                  <span className="item-total">0</span>
-                </Link>
+                <span className="item-name">Investment Income</span>
+                <span className="item-total">0</span>
               </li>
               <li>
                 <span className="item-name red">
@@ -125,8 +116,17 @@ const Transaction038 = () => (
                   <h5>Assets</h5>
                   <ul className="balance-sheet-assets">
                     <li>
-                      <span className="item-name green">Cash</span>
-                      <span className="item-total test-active">7</span>
+                      <Link
+                        to="/038"
+                        style={{
+                          color: `inherit`,
+                          textDecoration: `none`,
+                          cursor: `default`
+                        }}
+                      >
+                        <span className="item-name green">Cash</span>
+                        <span className="item-total test-active">3</span>
+                      </Link>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
@@ -253,4 +253,4 @@ const Transaction038 = () => (
   </>
 );
 
-export default Transaction038;
+export default Transaction037;

@@ -1,10 +1,10 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
 const Transaction043 = () => (
   <>
-    <TransactionList activeStep={null} canHighlightCashTransactions={true} />
+    <TransactionList activeStep={null} />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -185,7 +185,16 @@ const Transaction043 = () => (
               <h5>Net Assets</h5>
               <div className="net-assets-inner-wrapper">
                 <span className="item-total">0</span>
-                <span className="item-total">4</span>
+                <Link
+                  to="/044"
+                  style={{
+                    color: `inherit`,
+                    textDecoration: `none`,
+                    cursor: `default`
+                  }}
+                >
+                  <span className="item-total">0</span>
+                </Link>
               </div>
             </div>
           </div>
