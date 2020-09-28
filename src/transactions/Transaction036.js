@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction036 = () => (
+const Transaction036 = ({ companyName }) => (
   <>
     <TransactionList activeStep="014" />
     <div className="board-wrapper">
@@ -54,7 +54,7 @@ const Transaction036 = () => (
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="blue">Rainy Day Insurance</h1>
+          <h1 className="blue">{companyName}</h1>
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"
