@@ -86,22 +86,16 @@ h5 {
 }
 
 .transaction-items-headers {
-  /* border-bottom: 1px solid black;
-  border-top: 1px solid black; */
-  /* align-items: center; */
   display: flex;
   text-align: center;
 }
 
 .transaction-items-header-number {
-  /* border-left: 1px solid black;
-  border-right: 1px solid black; */
   width: 15%;
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
 .transaction-items-header-description {
-  /* border-right: 1px solid black; */
   width: 100%;
   margin-top: 6px;
   text-align: left;

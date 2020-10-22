@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction042 = () => (
+const Transaction042 = ({ companyName }) => (
   <>
     <TransactionList activeStep={null} />
     <div className="board-wrapper">
@@ -27,7 +27,7 @@ const Transaction042 = () => (
         </div>
         <div className="customer-wrapper-us-bank">
           <h5 className="green">US Bank</h5>
-          <span className="item-total">4</span>
+          <span className="item-total">0</span>
         </div>
       </div>
       {/* income statement and balance sheet section */}
@@ -45,7 +45,7 @@ const Transaction042 = () => (
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="blue">Rainy Day Insurance</h1>
+          <h1 className="blue">{companyName}</h1>
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -104,7 +104,16 @@ const Transaction042 = () => (
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <span className="item-total revenue bg-black white">4</span>
+              <Link
+                to="/043"
+                style={{
+                  color: `inherit`,
+                  textDecoration: `none`,
+                  cursor: `default`
+                }}
+              >
+                <span className="item-total revenue bg-black white">0</span>
+              </Link>
             </div>
           </div>
 
@@ -185,16 +194,7 @@ const Transaction042 = () => (
               <h5>Net Assets</h5>
               <div className="net-assets-inner-wrapper">
                 <span className="item-total">0</span>
-                <Link
-                  to="/043"
-                  style={{
-                    color: `inherit`,
-                    textDecoration: `none`,
-                    cursor: `default`
-                  }}
-                >
-                  <span className="item-total">0</span>
-                </Link>
+                <span className="item-total">0</span>
               </div>
             </div>
           </div>

@@ -43,142 +43,148 @@ import Transaction040 from "./transactions/Transaction040";
 import Transaction041 from "./transactions/Transaction041";
 import Transaction042 from "./transactions/Transaction042";
 import Transaction043 from "./transactions/Transaction043";
+import Transaction044 from "./transactions/Transaction044";
 
 const Router = () => {
+  const companyName = "Medica"
+
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact>
-          <Transaction001 />
+          <Transaction001 companyName={companyName} />
         </Route>
         <Route path="/001" exact>
-          <Transaction001 />
+          <Transaction001 companyName={companyName} />
         </Route>
         <Route path="/002" exact>
-          <Transaction002 />
+          <Transaction002 companyName={companyName} />
         </Route>
         <Route path="/003" exact>
-          <Transaction003 />
+          <Transaction003 companyName={companyName} />
         </Route>
         <Route path="/004" exact>
-          <Transaction004 />
+          <Transaction004 companyName={companyName} />
         </Route>
         <Route path="/005" exact>
-          <Transaction005 />
+          <Transaction005 companyName={companyName} />
         </Route>
         <Route path="/006" exact>
-          <Transaction006 />
+          <Transaction006 companyName={companyName} />
         </Route>
         <Route path="/007" exact>
-          <Transaction007 />
+          <Transaction007 companyName={companyName} />
         </Route>
         <Route path="/008" exact>
-          <Transaction008 />
+          <Transaction008 companyName={companyName} />
         </Route>
         <Route path="/009" exact>
-          <Transaction009 />
+          <Transaction009 companyName={companyName} />
         </Route>
         <Route path="/010" exact>
-          <Transaction010 />
+          <Transaction010 companyName={companyName} />
         </Route>
         <Route path="/011" exact>
-          <Transaction011 />
+          <Transaction011 companyName={companyName} />
         </Route>
         <Route path="/012" exact>
-          <Transaction012 />
+          <Transaction012 companyName={companyName} />
         </Route>
         <Route path="/013" exact>
-          <Transaction013 />
+          <Transaction013 companyName={companyName} />
         </Route>
         <Route path="/014" exact>
-          <Transaction014 />
+          <Transaction014 companyName={companyName} />
         </Route>
         <Route path="/015" exact>
-          <Transaction015 />
+          <Transaction015 companyName={companyName} />
         </Route>
         <Route path="/016" exact>
-          <Transaction016 />
+          <Transaction016 companyName={companyName} />
         </Route>
         <Route path="/017" exact>
-          <Transaction017 />
+          <Transaction017 companyName={companyName} />
         </Route>
         <Route path="/018" exact>
-          <Transaction018 />
+          <Transaction018 companyName={companyName} />
         </Route>
         <Route path="/019" exact>
-          <Transaction019 />
+          <Transaction019 companyName={companyName} />
         </Route>
         <Route path="/020" exact>
-          <Transaction020 />
+          <Transaction020 companyName={companyName} />
         </Route>
         <Route path="/021" exact>
-          <Transaction021 />
+          <Transaction021 companyName={companyName} />
         </Route>
         <Route path="/022" exact>
-          <Transaction022 />
+          <Transaction022 companyName={companyName} />
         </Route>
         <Route path="/023" exact>
-          <Transaction023 />
+          <Transaction023 companyName={companyName} />
         </Route>
         <Route path="/024" exact>
-          <Transaction024 />
+          <Transaction024 companyName={companyName} />
         </Route>
         <Route path="/025" exact>
-          <Transaction025 />
+          <Transaction025 companyName={companyName} />
         </Route>
         <Route path="/026" exact>
-          <Transaction026 />
+          <Transaction026 companyName={companyName} />
         </Route>
         <Route path="/027" exact>
-          <Transaction027 />
+          <Transaction027 companyName={companyName} />
         </Route>
         <Route path="/028" exact>
-          <Transaction028 />
+          <Transaction028 companyName={companyName} />
         </Route>
         <Route path="/029" exact>
-          <Transaction029 />
+          <Transaction029 companyName={companyName} />
         </Route>
         <Route path="/030" exact>
-          <Transaction030 />
+          <Transaction030 companyName={companyName} />
         </Route>
         <Route path="/031" exact>
-          <Transaction031 />
+          <Transaction031 companyName={companyName} />
         </Route>
         <Route path="/032" exact>
-          <Transaction032 />
+          <Transaction032 companyName={companyName} />
         </Route>
         <Route path="/033" exact>
-          <Transaction033 />
+          <Transaction033 companyName={companyName} />
         </Route>
         <Route path="/034" exact>
-          <Transaction034 />
+          <Transaction034 companyName={companyName} />
         </Route>
         <Route path="/035" exact>
-          <Transaction035 />
+          <Transaction035 companyName={companyName} />
         </Route>
         <Route path="/036" exact>
-          <Transaction036 />
+          <Transaction036 companyName={companyName} />
         </Route>
         <Route path="/037" exact>
-          <Transaction037 />
+          <Transaction037 companyName={companyName} />
         </Route>
         <Route path="/038" exact>
-          <Transaction038 />
+          <Transaction038 companyName={companyName} />
         </Route>
         <Route path="/039" exact>
-          <Transaction039 />
+          <Transaction039 companyName={companyName} />
         </Route>
         <Route path="/040" exact>
-          <Transaction040 />
+          <Transaction040 companyName={companyName} />
         </Route>
         <Route path="/041" exact>
-          <Transaction041 />
+          <Transaction041 companyName={companyName} />
         </Route>
         <Route path="/042" exact>
-          <Transaction042 />
+          <Transaction042 companyName={companyName} />
         </Route>
         <Route path="/043" exact>
-          <Transaction043 />
+          <Transaction043 companyName={companyName} />
+        </Route>
+        <Route path="/044" exact>
+          <Transaction044 companyName={companyName} />
         </Route>
       </Switch>
     </BrowserRouter>

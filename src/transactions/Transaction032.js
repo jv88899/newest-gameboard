@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction032 = () => (
+const Transaction032 = ({ companyName }) => (
   <>
     <TransactionList activeStep="013" />
     <div className="board-wrapper">
@@ -20,7 +20,9 @@ const Transaction032 = () => (
           <span className="item-total">12</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
-          <h5 className="green">Wells Fargo <br /> Bank</h5>
+          <h5 className="green">
+            Wells Fargo <br /> Bank
+          </h5>
           <span className="item-total">5</span>
         </div>
         <div className="customer-wrapper-us-bank">
@@ -43,7 +45,7 @@ const Transaction032 = () => (
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="blue">Rainy Day Insurance</h1>
+          <h1 className="blue">{companyName}</h1>
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"

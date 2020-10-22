@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction036 = () => (
+const Transaction036 = ({ companyName }) => (
   <>
     <TransactionList activeStep="015" />
     <div className="board-wrapper">
@@ -20,12 +20,23 @@ const Transaction036 = () => (
           <span className="item-total">12</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
-          <h5 className="green">Wells Fargo <br /> Bank</h5>
+          <h5 className="green">
+            Wells Fargo <br /> Bank
+          </h5>
           <span className="item-total">5</span>
         </div>
         <div className="customer-wrapper-us-bank">
-          <h5 className="green">US Bank</h5>
-          <span className="item-total">4</span>
+          <Link
+            to="/037"
+            style={{
+              color: `inherit`,
+              textDecoration: `none`,
+              cursor: `default`
+            }}
+          >
+            <h5 className="green">US Bank</h5>
+            <span className="item-total">4</span>
+          </Link>
         </div>
       </div>
       {/* income statement and balance sheet section */}
@@ -43,7 +54,7 @@ const Transaction036 = () => (
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="blue">Rainy Day Insurance</h1>
+          <h1 className="blue">{companyName}</h1>
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -116,17 +127,8 @@ const Transaction036 = () => (
                   <h5>Assets</h5>
                   <ul className="balance-sheet-assets">
                     <li>
-                      <Link
-                        to="/037"
-                        style={{
-                          color: `inherit`,
-                          textDecoration: `none`,
-                          cursor: `default`
-                        }}
-                      >
-                        <span className="item-name green">Cash</span>
-                        <span className="item-total test-active">3</span>
-                      </Link>
+                      <span className="item-name green">Cash</span>
+                      <span className="item-total test-active">3</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>

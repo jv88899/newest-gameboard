@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction041 = () => (
+const Transaction041 = ({ companyName }) => (
   <>
-    <TransactionList activeStep={null} />
+    <TransactionList activeStep="016" />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -27,7 +27,7 @@ const Transaction041 = () => (
         </div>
         <div className="customer-wrapper-us-bank">
           <h5 className="green">US Bank</h5>
-          <span className="item-total">4</span>
+          <span className="item-total">0</span>
         </div>
       </div>
       {/* income statement and balance sheet section */}
@@ -45,7 +45,7 @@ const Transaction041 = () => (
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="blue">Rainy Day Insurance</h1>
+          <h1 className="blue">{companyName}</h1>
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -104,16 +104,7 @@ const Transaction041 = () => (
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <Link
-                to="/042"
-                style={{
-                  color: `inherit`,
-                  textDecoration: `none`,
-                  cursor: `default`
-                }}
-              >
-                <span className="item-total revenue bg-black white">0</span>
-              </Link>
+              <span className="item-total revenue bg-black white">0</span>
             </div>
           </div>
 
@@ -128,7 +119,7 @@ const Transaction041 = () => (
                   <ul className="balance-sheet-assets">
                     <li>
                       <span className="item-name green">Cash</span>
-                      <span className="item-total">6</span>
+                      <span className="item-total test-active">6</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
@@ -227,8 +218,17 @@ const Transaction041 = () => (
               <span className="item-total">0</span>
             </li>
             <li>
-              <span className="item-name red">Taxing Authority</span>
-              <span className="item-total">2</span>
+              <Link
+                to="/042"
+                style={{
+                  color: `inherit`,
+                  textDecoration: `none`,
+                  cursor: `default`
+                }}
+              >
+                <span className="item-name red">Taxing Authority</span>
+                <span className="item-total">1</span>
+              </Link>
             </li>
           </ul>
         </div>

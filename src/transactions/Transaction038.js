@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction038 = () => (
+const Transaction038 = ({ companyName }) => (
   <>
-    <TransactionList activeStep="016" />
+    <TransactionList activeStep="015" />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -20,12 +20,14 @@ const Transaction038 = () => (
           <span className="item-total">12</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
-          <h5 className="green">Wells Fargo <br /> Bank</h5>
+          <h5 className="green">
+            Wells Fargo <br /> Bank
+          </h5>
           <span className="item-total">5</span>
         </div>
         <div className="customer-wrapper-us-bank">
           <h5 className="green">US Bank</h5>
-          <span className="item-total">4</span>
+          <span className="item-total">0</span>
         </div>
       </div>
       {/* income statement and balance sheet section */}
@@ -43,7 +45,7 @@ const Transaction038 = () => (
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="blue">Rainy Day Insurance</h1>
+          <h1 className="blue">{companyName}</h1>
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -90,10 +92,6 @@ const Transaction038 = () => (
                 <span className="item-total">0</span>
               </li>
               <li>
-                <span className="item-name">Investment Income</span>
-                <span className="item-total test-active">4</span>
-              </li>
-              <li>
                 <Link
                   to="/039"
                   style={{
@@ -102,11 +100,15 @@ const Transaction038 = () => (
                     cursor: `default`
                   }}
                 >
-                  <span className="item-name red">
-                    Federal Income Tax Expense
-                  </span>
+                  <span className="item-name">Investment Income</span>
                   <span className="item-total">0</span>
                 </Link>
+              </li>
+              <li>
+                <span className="item-name red">
+                  Federal Income Tax Expense
+                </span>
+                <span className="item-total">0</span>
               </li>
             </ul>
             <div className="totals-wrapper">
@@ -126,7 +128,7 @@ const Transaction038 = () => (
                   <ul className="balance-sheet-assets">
                     <li>
                       <span className="item-name green">Cash</span>
-                      <span className="item-total">7</span>
+                      <span className="item-total test-active">7</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>

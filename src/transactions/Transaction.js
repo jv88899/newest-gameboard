@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction005 = ({ companyName }) => (
+const Transaction037 = () => (
   <>
-    <TransactionList activeStep="002" />
+    <TransactionList activeStep="015" />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -17,12 +17,10 @@ const Transaction005 = ({ companyName }) => (
             <li>Employers</li>
             <li>Government</li>
           </ul>
-          <span className="item-total">22</span>
+          <span className="item-total">12</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
-          <h5 className="green">
-            Wells Fargo <br /> Bank
-          </h5>
+          <h5 className="green">Wells Fargo <br /> Bank</h5>
           <span className="item-total">5</span>
         </div>
         <div className="customer-wrapper-us-bank">
@@ -45,7 +43,7 @@ const Transaction005 = ({ companyName }) => (
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="blue">{companyName}</h1>
+          <h1 className="blue">Rainy Day Insurance</h1>
           <svg
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -69,23 +67,23 @@ const Transaction005 = ({ companyName }) => (
               </li>
               <li>
                 <span className="item-name red">Pharmacy Expense</span>
-                <span className="item-total">0</span>
+                <span className="item-total">2</span>
               </li>
               <li>
                 <span className="item-name red">Medical Expense</span>
-                <span className="item-total">0</span>
+                <span className="item-total">13</span>
               </li>
               <li>
                 <span className="item-name red">Administrative Expense</span>
-                <span className="item-total">0</span>
+                <span className="item-total">2</span>
               </li>
               <li>
                 <span className="item-name red">Broker Expense</span>
-                <span className="item-total">0</span>
+                <span className="item-total">1</span>
               </li>
               <li>
                 <span className="item-name red">Premium Tax Expense</span>
-                <span className="item-total">0</span>
+                <span className="item-total">1</span>
               </li>
               <li>
                 <span className="item-name red">Depreciation Expense</span>
@@ -118,33 +116,33 @@ const Transaction005 = ({ companyName }) => (
                   <h5>Assets</h5>
                   <ul className="balance-sheet-assets">
                     <li>
-                      <span className="item-name green">Cash</span>
-                      <span className="item-total test-active">18</span>
-                    </li>
-                    <li>
-                      <span className="item-name blue">Investments</span>
-                      <span className="item-total">0</span>
-                    </li>
-                    <li>
                       <Link
-                        to="/006"
+                        to="/038"
                         style={{
                           color: `inherit`,
                           textDecoration: `none`,
                           cursor: `default`
                         }}
                       >
-                        <span className="item-name blue">
-                          Premiums Receivable
-                        </span>
-                        <span className="item-total">20</span>
+                        <span className="item-name green">Cash</span>
+                        <span className="item-total test-active">3</span>
                       </Link>
+                    </li>
+                    <li>
+                      <span className="item-name blue">Investments</span>
+                      <span className="item-total">6</span>
+                    </li>
+                    <li>
+                      <span className="item-name blue">
+                        Premiums Receivable
+                      </span>
+                      <span className="item-total">2</span>
                     </li>
                     <li>
                       <span className="item-name blue">
                         Property & Equipment
                       </span>
-                      <span className="item-total">0</span>
+                      <span className="item-total">5</span>
                     </li>
                   </ul>
                 </div>
@@ -154,11 +152,11 @@ const Transaction005 = ({ companyName }) => (
                   <ul className="balance-sheet-liabilities">
                     <li>
                       <span className="item-name blue">Claims Payable</span>
-                      <span className="item-total">0</span>
+                      <span className="item-total">1</span>
                     </li>
                     <li>
                       <span className="item-name blue">IBNR</span>
-                      <span className="item-total">0</span>
+                      <span className="item-total">2</span>
                     </li>
                     <li>
                       <span className="item-name blue">Salary Payable</span>
@@ -166,11 +164,11 @@ const Transaction005 = ({ companyName }) => (
                     </li>
                     <li>
                       <span className="item-name blue">Broker Payable</span>
-                      <span className="item-total">0</span>
+                      <span className="item-total">1</span>
                     </li>
                     <li>
                       <span className="item-name blue">Accounts Payable</span>
-                      <span className="item-total">0</span>
+                      <span className="item-total">1</span>
                     </li>
                     <li>
                       <span className="item-name blue">
@@ -184,7 +182,7 @@ const Transaction005 = ({ companyName }) => (
                     </li>
                     <li>
                       <span className="item-name blue">Unearned Premiums</span>
-                      <span className="item-total">0</span>
+                      <span className="item-total">10</span>
                     </li>
                   </ul>
                 </div>
@@ -208,15 +206,15 @@ const Transaction005 = ({ companyName }) => (
           <ul className="operating-inner-list">
             <li>
               <span className="item-name red">Pharmacies</span>
-              <span className="item-total">0</span>
+              <span className="item-total">2</span>
             </li>
             <li>
               <span className="item-name red">Medical Providers</span>
-              <span className="item-total">0</span>
+              <span className="item-total">10</span>
             </li>
             <li>
               <span className="item-name red">Employees</span>
-              <span className="item-total">0</span>
+              <span className="item-total">1</span>
             </li>
             <li>
               <span className="item-name red">Brokers</span>
@@ -228,7 +226,7 @@ const Transaction005 = ({ companyName }) => (
             </li>
             <li>
               <span className="item-name red">Taxing Authority</span>
-              <span className="item-total">0</span>
+              <span className="item-total">1</span>
             </li>
           </ul>
         </div>
@@ -237,7 +235,7 @@ const Transaction005 = ({ companyName }) => (
           <ul className="investing-inner-list">
             <li>
               <span className="item-name red">Carlson Properties</span>
-              <span className="item-total">0</span>
+              <span className="item-total">5</span>
             </li>
           </ul>
         </div>
@@ -255,4 +253,4 @@ const Transaction005 = ({ companyName }) => (
   </>
 );
 
-export default Transaction005;
+export default Transaction037;
