@@ -119,7 +119,7 @@ const Transaction035 = ({ companyName }) => (
                   <ul className="balance-sheet-assets">
                     <li>
                       <span className="item-name green">Cash</span>
-                      <span className="item-total test-active">5</span>
+                      <span className="item-total">5</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
@@ -240,7 +240,7 @@ const Transaction035 = ({ companyName }) => (
                 }}
               >
                 <span className="item-name red">US Bank</span>
-                <span className="item-total">6</span>
+                <span className="item-total test-active">6</span>
               </Link>
             </li>
           </ul>

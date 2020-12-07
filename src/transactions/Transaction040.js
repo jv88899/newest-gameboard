@@ -99,7 +99,7 @@ const Transaction040 = ({ companyName }) => (
                 <span className="item-name red">
                   Federal Income Tax Expense
                 </span>
-                <span className="item-total">1</span>
+                <span className="item-total test-active">1</span>
               </li>
             </ul>
             <div className="totals-wrapper">
@@ -127,7 +127,7 @@ const Transaction040 = ({ companyName }) => (
                         }}
                       >
                         <span className="item-name green">Cash</span>
-                        <span className="item-total test-active">7</span>
+                        <span className="item-total">7</span>
                       </Link>
                     </li>
                     <li>

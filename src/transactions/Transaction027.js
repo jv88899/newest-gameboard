@@ -17,7 +17,7 @@ const Transaction027 = ({ companyName }) => (
             <li>Employers</li>
             <li>Government</li>
           </ul>
-          <span className="item-total">10</span>
+          <span className="item-total test-active">10</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
           <h5 className="green">
@@ -127,7 +127,7 @@ const Transaction027 = ({ companyName }) => (
                         }}
                       >
                         <span className="item-name green">Cash</span>
-                        <span className="item-total test-active">6</span>
+                        <span className="item-total">6</span>
                       </Link>
                     </li>
                     <li>
