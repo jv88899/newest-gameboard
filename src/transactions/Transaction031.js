@@ -239,6 +239,10 @@ const Transaction031 = ({ companyName }) => (
                 <span className="item-total">0</span>
               </Link>
             </li>
+            <li>
+              <span className="item-name red">US Bank</span>
+              <span className="item-total">0</span>
+            </li>
           </ul>
         </div>
         <div className="financing-inner">
