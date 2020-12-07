@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction017 = ({ companyName }) => (
+const Transaction018 = ({ companyName }) => (
   <>
     <TransactionList activeStep="007" />
     <div className="board-wrapper">
@@ -152,17 +152,8 @@ const Transaction017 = ({ companyName }) => (
                       <span className="item-total">2</span>
                     </li>
                     <li>
-                      <Link
-                        to="/018"
-                        style={{
-                          color: "inherit",
-                          cursor: "default",
-                          textDecoration: "none"
-                        }}
-                      >
-                        <span className="item-name blue">Salary Payable</span>
-                        <span className="item-total">0</span>
-                      </Link>
+                      <span className="item-name blue">Salary Payable</span>
+                      <span className="item-total">1</span>
                     </li>
                     <li>
                       <span className="item-name blue">Broker Payable</span>
@@ -255,4 +246,4 @@ const Transaction017 = ({ companyName }) => (
   </>
 );
 
-export default Transaction017;
+export default Transaction018;
