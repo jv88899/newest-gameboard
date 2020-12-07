@@ -22,7 +22,7 @@ const TransactionList = ({
       stepNumber: `2`,
       transactionNumber: `002`,
       route: `003`,
-      description: `Collect $18 cash from customers`,
+      description: `Collect $20 cash from customers`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -32,7 +32,7 @@ const TransactionList = ({
       stepNumber: `3`,
       transactionNumber: `003`,
       route: `006`,
-      description: `Actual prescriptions filled for $2; claim received`,
+      description: `Actual prescriptions filled for $2; claim received and paid`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -41,8 +41,8 @@ const TransactionList = ({
     {
       stepNumber: `4`,
       transactionNumber: `004`,
-      route: `008`,
-      description: `$11 of actual medical expenses for visits; claim received`,
+      route: `009`,
+      description: `$11 of actual medical visits; claim received`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -51,7 +51,7 @@ const TransactionList = ({
     {
       stepNumber: `5`,
       transactionNumber: `005`,
-      route: `010`,
+      route: `011`,
       description: `Estimated claims for $2 not received for Year 1`,
       activeStep: null,
       previousStep: null,
@@ -61,8 +61,8 @@ const TransactionList = ({
     {
       stepNumber: `6`,
       transactionNumber: `006`,
-      route: `012`,
-      description: `Pay $12 for pharmacy claims and known medical claims`,
+      route: `013`,
+      description: `Pay $10 of known medical claims`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -102,7 +102,7 @@ const TransactionList = ({
       stepNumber: `10`,
       transactionNumber: `010`,
       route: `023`,
-      description: `Receive bill of $1 from KSTP for ad space for "We've got you covered" commercials`,
+      description: `Pay postage bill of $1 for mailing annual enrollment materials to Medicare members for Year 1`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -111,7 +111,7 @@ const TransactionList = ({
     {
       stepNumber: `11`,
       transactionNumber: `011`,
-      route: `025`,
+      route: `026`,
       description: `Receive $10 cash from customers for Year 2`,
       activeStep: null,
       previousStep: null,
@@ -121,7 +121,7 @@ const TransactionList = ({
     {
       stepNumber: `12`,
       transactionNumber: `012`,
-      route: `028`,
+      route: `029`,
       description: `Purchase of 401 and 301 Carlson Parkway buildings for $5`,
       activeStep: null,
       previousStep: null,
@@ -131,8 +131,8 @@ const TransactionList = ({
     {
       stepNumber: `13`,
       transactionNumber: `013`,
-      route: `031`,
-      description: `Pay $1 of premium taxes to the Minnesota Department of Revenue`,
+      route: `032`,
+      description: `Buy investments (primarily bonds but some stocks) with excess cash of $6`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -141,8 +141,8 @@ const TransactionList = ({
     {
       stepNumber: `14`,
       transactionNumber: `014`,
-      route: `034`,
-      description: `Buy investments (primarily bonds but some stocks) with excess cash of $6`,
+      route: `035`,
+      description: `Receive an interest payment of $2 from bonds`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -151,18 +151,8 @@ const TransactionList = ({
     {
       stepNumber: `15`,
       transactionNumber: `015`,
-      route: `036`,
-      description: `Receive a very generous dividend of $4`,
-      activeStep: null,
-      previousStep: null,
-      visible: true,
-      isCashTransaction: true
-    },
-    {
-      stepNumber: `16`,
-      transactionNumber: `016`,
-      route: `039`,
-      description: `Pay federal income taxes of $1 to the IRS`,
+      route: `038`,
+      description: `Pay premium taxes of $1 to the Minnesota Department of Revenue; Pay federal income taxes of $1 to the IRS`,
       activeStep: null,
       previousStep: null,
       visible: true,
@@ -179,7 +169,8 @@ const TransactionList = ({
           <span className="transaction-items-header-description bold center">
             <h3
               onClick={() => {
-                if (canHighlightCashTransactions) setHighlightCashTransactions(!highlightCashTransactions);
+                if (canHighlightCashTransactions)
+                  setHighlightCashTransactions(!highlightCashTransactions);
               }}
             >
               Year 1 Transactions
