@@ -46,7 +46,7 @@ import Transaction043 from "./transactions/Transaction043";
 import Transaction044 from "./transactions/Transaction044";
 
 const Router = () => {
-  const companyName = "Medica"
+  const companyName = "Medica";
 
   return (
     <BrowserRouter>
@@ -180,10 +180,10 @@ const Router = () => {
         <Route path="/042" exact>
           <Transaction042 companyName={companyName} />
         </Route>
-        <Route path="/043" exact>
+        <Route path='/043' exact>
           <Transaction043 companyName={companyName} />
         </Route>
-        <Route path="/044" exact>
+        <Route path='/044' exact>
           <Transaction044 companyName={companyName} />
         </Route>
       </Switch>

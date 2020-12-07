@@ -17,7 +17,7 @@ const Transaction022 = ({ companyName }) => (
             <li>Employers</li>
             <li>Government</li>
           </ul>
-          <span className="item-total">22</span>
+          <span className="item-total">20</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
           <h5 className="green">
@@ -119,7 +119,7 @@ const Transaction022 = ({ companyName }) => (
                   <ul className="balance-sheet-assets">
                     <li>
                       <span className="item-name green">Cash</span>
-                      <span className="item-total">5</span>
+                      <span className="item-total">7</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
@@ -129,7 +129,7 @@ const Transaction022 = ({ companyName }) => (
                       <span className="item-name blue">
                         Premiums Receivable
                       </span>
-                      <span className="item-total">2</span>
+                      <span className="item-total">0</span>
                     </li>
                     <li>
                       <span className="item-name blue">
@@ -157,11 +157,11 @@ const Transaction022 = ({ companyName }) => (
                     </li>
                     <li>
                       <Link
-                        to="023"
+                        to="/023"
                         style={{
-                          color: `inherit`,
-                          textDecoration: `none`,
-                          cursor: `default`
+                          color: "inherit",
+                          cursor: "default",
+                          textDecoration: "none"
                         }}
                       >
                         <span className="item-name blue">Broker Payable</span>
@@ -237,6 +237,10 @@ const Transaction022 = ({ companyName }) => (
           <ul className="investing-inner-list">
             <li>
               <span className="item-name red">Carlson Properties</span>
+              <span className="item-total">0</span>
+            </li>
+            <li>
+              <span className="item-name red">US Bank</span>
               <span className="item-total">0</span>
             </li>
           </ul>

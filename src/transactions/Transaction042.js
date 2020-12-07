@@ -17,7 +17,7 @@ const Transaction042 = ({ companyName }) => (
             <li>Employers</li>
             <li>Government</li>
           </ul>
-          <span className="item-total">12</span>
+          <span className="item-total">10</span>
         </div>
         <div className="customer-wrapper-wells-fargo-bank">
           <h5 className="green">
@@ -27,7 +27,7 @@ const Transaction042 = ({ companyName }) => (
         </div>
         <div className="customer-wrapper-us-bank">
           <h5 className="green">US Bank</h5>
-          <span className="item-total">0</span>
+          <span className="item-total">4</span>
         </div>
       </div>
       {/* income statement and balance sheet section */}
@@ -93,7 +93,7 @@ const Transaction042 = ({ companyName }) => (
               </li>
               <li>
                 <span className="item-name">Investment Income</span>
-                <span className="item-total">4</span>
+                <span className="item-total">2</span>
               </li>
               <li>
                 <span className="item-name red">
@@ -107,9 +107,9 @@ const Transaction042 = ({ companyName }) => (
               <Link
                 to="/043"
                 style={{
-                  color: `inherit`,
-                  textDecoration: `none`,
-                  cursor: `default`
+                  color: "inherit",
+                  cursor: "default",
+                  textDecoration: "none"
                 }}
               >
                 <span className="item-total revenue bg-black white">0</span>
@@ -128,7 +128,7 @@ const Transaction042 = ({ companyName }) => (
                   <ul className="balance-sheet-assets">
                     <li>
                       <span className="item-name green">Cash</span>
-                      <span className="item-total">6</span>
+                      <span className="item-total">5</span>
                     </li>
                     <li>
                       <span className="item-name blue">Investments</span>
@@ -138,7 +138,7 @@ const Transaction042 = ({ companyName }) => (
                       <span className="item-name blue">
                         Premiums Receivable
                       </span>
-                      <span className="item-total">2</span>
+                      <span className="item-total">0</span>
                     </li>
                     <li>
                       <span className="item-name blue">
@@ -170,7 +170,7 @@ const Transaction042 = ({ companyName }) => (
                     </li>
                     <li>
                       <span className="item-name blue">Accounts Payable</span>
-                      <span className="item-total">1</span>
+                      <span className="item-total">0</span>
                     </li>
                     <li>
                       <span className="item-name blue">
@@ -224,11 +224,11 @@ const Transaction042 = ({ companyName }) => (
             </li>
             <li>
               <span className="item-name red">Vendors</span>
-              <span className="item-total">0</span>
+              <span className="item-total">1</span>
             </li>
             <li>
               <span className="item-name red">Taxing Authority</span>
-              <span className="item-total">2</span>
+              <span className="item-total test-active">2</span>
             </li>
           </ul>
         </div>
@@ -238,6 +238,10 @@ const Transaction042 = ({ companyName }) => (
             <li>
               <span className="item-name red">Carlson Properties</span>
               <span className="item-total">5</span>
+            </li>
+            <li>
+              <span className="item-name red">US Bank</span>
+              <span className="item-total">4</span>
             </li>
           </ul>
         </div>
