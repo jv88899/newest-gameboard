@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TransactionList from "../TransactionList";
 
-const Transaction042 = ({ companyName }) => (
+const Transaction044 = ({ companyName }) => (
   <>
-    <TransactionList activeStep={null} />
+    <TransactionList activeStep={null} canHighlightCashTransactions={true} />
     <div className="board-wrapper">
       {/* customer section */}
       <div className="customer-wrapper">
@@ -104,16 +104,7 @@ const Transaction042 = ({ companyName }) => (
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <Link
-                to="/043"
-                style={{
-                  color: "inherit",
-                  cursor: "default",
-                  textDecoration: "none"
-                }}
-              >
-                <span className="item-total revenue bg-black white">0</span>
-              </Link>
+              <span className="item-total revenue bg-black white">4</span>
             </div>
           </div>
 
@@ -194,7 +185,7 @@ const Transaction042 = ({ companyName }) => (
               <h5>Net Assets</h5>
               <div className="net-assets-inner-wrapper">
                 <span className="item-total">0</span>
-                <span className="item-total">0</span>
+                <span className="item-total">4</span>
               </div>
             </div>
           </div>
@@ -259,4 +250,4 @@ const Transaction042 = ({ companyName }) => (
   </>
 );
 
-export default Transaction042;
+export default Transaction044;
