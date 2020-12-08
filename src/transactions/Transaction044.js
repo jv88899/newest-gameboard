@@ -185,7 +185,7 @@ const Transaction044 = ({ companyName }) => (
               <h5>Net Assets</h5>
               <div className="net-assets-inner-wrapper">
                 <span className="item-total">0</span>
-                <span className="item-total">4</span>
+                <span className="item-total">2</span>
               </div>
             </div>
           </div>

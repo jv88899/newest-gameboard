@@ -262,7 +262,11 @@ h5 {
 }
 
 .operating-wrapper {
-  padding-top: 35px;
+  padding-top: 65px;
+}
+
+.operating-wrapper h5 {
+  margin: 0;
 }
 
 .test-active {

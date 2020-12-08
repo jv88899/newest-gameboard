@@ -106,7 +106,7 @@ const TransactionList = ({
       activeStep: null,
       previousStep: null,
       visible: true,
-      isCashTransaction: false
+      isCashTransaction: true
     },
     {
       stepNumber: `11`,

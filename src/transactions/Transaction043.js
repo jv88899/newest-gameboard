@@ -104,7 +104,7 @@ const Transaction043 = ({ companyName }) => (
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <span className="item-total revenue bg-black white">4</span>
+              <span className="item-total revenue bg-black white">2</span>
             </div>
           </div>
 
