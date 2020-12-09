@@ -27,7 +27,7 @@ const Transaction044 = ({ companyName }) => (
         </div>
         <div className="customer-wrapper-us-bank">
           <h5 className="green">US Bank</h5>
-          <span className="item-total">2</span>
+          <span className="item-total">8</span>
         </div>
       </div>
       {/* income statement and balance sheet section */}
@@ -104,7 +104,7 @@ const Transaction044 = ({ companyName }) => (
             </ul>
             <div className="totals-wrapper">
               <span className="item-total expense bg-red white">0</span>
-              <span className="item-total revenue bg-black white">4</span>
+              <span className="item-total revenue bg-black white">2</span>
             </div>
           </div>
 

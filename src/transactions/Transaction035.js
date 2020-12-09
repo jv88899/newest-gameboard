@@ -35,7 +35,7 @@ const Transaction035 = ({ companyName }) => (
             }}
           >
             <h5 className="green">US Bank</h5>
-            <span className="item-total">4</span>
+            <span className="item-total">10</span>
           </Link>
         </div>
       </div>
